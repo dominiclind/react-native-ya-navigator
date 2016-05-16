@@ -445,7 +445,8 @@ export default class NavBar extends React.Component {
           style={[
             styles.titleContainer,
             {
-              left: IS_IOS ? (width - titlePartWidth) / 2 : leftPartWidth + 10,
+              // left: IS_IOS ? (width - titlePartWidth) / 2 : leftPartWidth + 10,
+              left: (width - titlePartWidth) / 2,
               width: titlePartWidth,
               height: getOrientation() === 'PORTRAIT' ?
                 height - NAV_BAR_STYLES.General.StatusBarHeight :
